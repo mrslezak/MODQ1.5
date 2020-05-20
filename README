@@ -1,19 +1,19 @@
-Linux kernel
-============
+This is the public repo to make XDA happy.  For MOD 1.5Q.  
+It was forked from https://github.com/MiCode/Xiaomi_Kernel_OpenSource.  
 
-There are several guides for kernel developers and users. These guides can
-be rendered in a number of formats, like HTML and PDF. Please read
-Documentation/admin-guide/README.rst first.
+Changes added to the kernel can be found by searching on various GitHub repos for the features listed in the kernel.
 
-In order to build the documentation, use ``make htmldocs`` or
-``make pdfdocs``.  The formatted documentation can also be read online at:
+MIUI 11 Mi9/ 9T Pro MOD 1.5
 
-    https://www.kernel.org/doc/html/latest/
+MOD-Q 1.5 is for stable MIUI 11 variants for Mi9 only - Xiaomi.eu 11.0.5 stable is what it was built for, runs best on, just use it.  The Mi9T Pro version supports MIUI 11 variants plus many AOSP builds.  If you use an official MIUI 11 Xiaomi version you will get a warning message "Contact device manufacturer."  You can ignore that, it means nothing.  But I highly suggest using Xiaomi.eu 11.0.5, or another MIUI 11 variant like MiRoom or some use Revolution OS. 
 
-There are various text files in the Documentation/ subdirectory,
-several of them using the Restructured Text markup notation.
-See Documentation/00-INDEX for a list of what is contained in each file.
+***DO NOT USE ANY PERFORMANCE (CPU/GPU/ETC) MAGISK MODULES WITH THIS FOR BEST PERFORMANCE!!!  IT INSTALLS IT'S OWN OPTIMIZED MAGISK MODULE AUTOMATICALLY***
 
-Please read the Documentation/process/changes.rst file, as it contains the
-requirements for building and running the kernel, and information about
-the problems which may result by upgrading your kernel.
+FP scanner will only work up to 11.0.5.  Xiaomi keeps changing the code and not releasing it to made Dev builds not work.  There were "patches" that worked until a few weeks back, but Xiaomi has yet again changed their FP scanner code.  So I will not update the FP code, do not ask, it is a complete waste of time.  Sorry, but Xiaomi.eu 11.0.5 and MOD 1.5 work very very well together.
+
+Features:
+835mhz GPU, Adreno Boost, Dynamic Fsync, Boeffla WL blocker (better battery idle), F2FS optimizations, LZ4 ZRAM.  EXFAT USB/SDCard support added. Sultan Boost + PapaSmurf's Op7Pro tweaks, Dynamic Overclocking + Underclocking with frequency boost for smooth, fast, clean performance and fluid scaling.  Many thanks to PapaSmurf who greatly influenced this kernel; portions are ported from his Op7 Pro Repo.
+
+Mi9T Pro version also reported to work on AOSP ROMs using the original FOD implementation (Derpfest, MSM, CRDroid, Havoc, LOS).
+
+Just use the Magisk Module it installs for you automatically when you flash the zip from TWRP, likely the best results will be obtained.  SmartPack can be installed to choose between profiles under Performance Tweaks - battery / balanced / performance / gaming, although the default installed Magisk module is highly recommended by itself for optimal performance and good battery drain.
